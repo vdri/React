@@ -4,9 +4,13 @@ import {NavLink} from "react-router-dom";
 
 export class Header extends Component {
         render() {
+                console.log("header rendered called");
             return (
 <div>
     <h2>{this.props.title}</h2>
+
+    <span>  {this.props.offer.name}-{this.props.offer.price}</span>
+    <br />
 
     <div>
           <NavLink to="/" exact 
@@ -20,7 +24,11 @@ export class Header extends Component {
                   activeClassName="success">Contact</NavLink>  
           <NavLink to="/cart" 
                   className="button" 
-                  activeClassName="success">Cart</NavLink>  
+                  activeClassName="success"
+                  > Cart [{this.props.cartLength}]</NavLink>  
+          <NavLink to="/products" 
+                  className="button" 
+                  activeClassName="success">Products</NavLink>  
     </div>
 </div>
             )

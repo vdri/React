@@ -1,3 +1,6 @@
+// this adds fetch method to window object
+import "whatwg-fetch";
+
 import React from "react";
 
 import {render} from "react-dom";

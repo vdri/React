@@ -12,7 +12,9 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 
-import Cart from "./cart/containers/CartContainer"
+import Cart from "./cart/containers/CartContainer";
+
+import ProductRoutes from "./product/Routes";
 
 
 export default function Routes(props) {
@@ -30,6 +32,11 @@ export default function Routes(props) {
                         </Route>
                         <Route path="/about"
                             component={About}>
+                        </Route>
+
+                        <Route path="/products">
+                            <ProductRoutes>
+                            </ProductRoutes>
                         </Route>
 
                         <Route path="/cart"
