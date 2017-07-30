@@ -29,6 +29,16 @@ export class Header extends Component {
           <NavLink to="/products" 
                   className="button" 
                   activeClassName="success">Products</NavLink>  
+        <NavLink to="/list" 
+                className="button" 
+                activeClassName="success">
+                List</NavLink>  
+        
+        <NavLink to="/infinite" 
+                  className="button" 
+                  activeClassName="success">
+                  Infinite
+        </NavLink>  
     </div>
 </div>
             )

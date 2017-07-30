@@ -12,6 +12,9 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 
+import ListExample from "./components/ListExample";
+import ListInfinite from "./components/ListInfinite";
+
 import Cart from "./cart/containers/CartContainer";
 
 import ProductRoutes from "./product/Routes";
@@ -39,8 +42,19 @@ export default function Routes(props) {
                             </ProductRoutes>
                         </Route>
 
+                        
+                        <Route path="/list"  
+                            component={ListExample}
+                            >
+                        </Route>
+
                         <Route path="/cart"
                             component={Cart}>
+                        </Route>
+
+                         <Route path="/infinite"  
+                            component={ListInfinite}
+                            >
                         </Route>
 
                         <Route path="**"

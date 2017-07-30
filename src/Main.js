@@ -16,4 +16,10 @@ import {Provider} from "react-redux";
 render(<Provider store={store}>
     <Routes>
     </Routes>
-</Provider>, document.getElementById("root"));
+</Provider>, document.getElementById("root"), function(){
+    
+setInterval( ()=> {
+        console.log("TOTAL DOM ", document.getElementsByTagName('*').length)
+}, 5000);
+ 
+});
